@@ -21,9 +21,9 @@ Proyek ini membandingkan **4 skenario tokenizer** yang digunakan untuk fine-tuni
 | Skenario | Tokenizer | Dilatih dari |
 |---|---|---|
 | Baseline | Tokenizer bawaan BART | Korpus asli BART (multibahasa/Inggris) |
-| Indomixedtufs4 | BPE kustom | Korpus umum Bahasa Indonesia (±165 ribu kalimat) |
-| Detiknews-Pemilu | BPE kustom | Korpus berita pemilu dari Detik News (±165 ribu kalimat) |
-| Mix | BPE kustom | Gabungan kedua korpus di atas (±330 ribu kalimat) |
+| Indomixedtufs4 | Byte Pair Encoding kustom | Korpus umum Bahasa Indonesia (±165 ribu kalimat) |
+| Detiknews-Pemilu | Byte Pair Encoding kustom | Korpus berita pemilu dari Detik News (±165 ribu kalimat) |
+| Mix | Byte Pair Encoding kustom | Gabungan kedua korpus di atas (±330 ribu kalimat) |
 
 Setiap skenario tokenizer digunakan untuk melatih ulang (fine-tune) model BART secara terpisah, lalu performanya dibandingkan menggunakan metrik ROUGE dan BERTScore.
 
